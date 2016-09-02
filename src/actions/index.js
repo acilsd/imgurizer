@@ -1,5 +1,4 @@
 import axios from 'axios';
-//import _ from 'lodash';
 
 const ROOT_URL = 'https://api.imgur.com/3/';
 const API_KEY = '3cc5d27ea2de91c';

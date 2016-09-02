@@ -17,7 +17,6 @@ class NavBar extends Component {
       <div class="wrapper">
         <nav class="main-nav">
           <Link to='/' class="main-logo">Imgur browser</Link>
-          <button class="btn btn--search" onClick={this.handleClick.bind(this)}>test</button>
         </nav>
       </div>
     );

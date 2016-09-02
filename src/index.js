@@ -7,7 +7,6 @@ import configureStore from './store/configureStore';
 import App from './App';
 import TopicList from './containers/TopicList';
 import Topic from './containers/Topic';
-import Image from './components/Image';
 import styles from './style/main.scss';
 
 const store = configureStore();
@@ -20,7 +19,6 @@ render(
       <Route path='/' component={App}>
         <IndexRoute component={TopicList}/>
         <Route path='/:id' component={Topic} />
-        <Route path='/img/:id' component={Image} />
       </Route>
     </Router>
   </Provider>

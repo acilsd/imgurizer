@@ -24,9 +24,7 @@ const ImageItem = (props) => {
   if (!is_album && !animated) {
     content = (
       <div class="image-item">
-        <Link to={`/img/${id}`}>
-          <img class="image-item__image" src={preview}/>
-        </Link>
+        <img class="image-item__image" src={preview}/>
         <div class="image-item__description">
           <div class="item-description__section">
             <span class="item-description__title">{title}</span>
@@ -40,9 +38,7 @@ const ImageItem = (props) => {
   } else if (is_album) {
     content  = (
       <div class="image-item">
-        <Link to={`/img/${id}`}>
-          <img class="image-item__image" src={albumCover}/>
-        </Link>
+        <img class="image-item__image" src={albumCover}/>
         <div class="image-item__description">
           <div class="item-description__section">
             <span class="item-description__title">{title}</span>
@@ -56,11 +52,9 @@ const ImageItem = (props) => {
   } else if (animated) {
     content = (
       <div class="image-item">
-        <Link to={`/img/${id}`}>
-          <video class="image-item__video" preload='auto' autoPlay='autoplay' loop='loop'>
-            <source src={mp4} type='video/mp4'></source>
+        <video class="image-item__video" preload='auto' autoPlay='autoplay' loop='loop'>
+          <source src={mp4} type='video/mp4'></source>
         </video>
-        </Link>
         <div class="image-item__description">
           <div class="item-description__section">
             <span class="item-description__title">{title}</span>

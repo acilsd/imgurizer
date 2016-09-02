@@ -26,7 +26,7 @@ class Topic extends Component {
       <div class="wrapper">
         <div class="image-wrapper">
           {
-            images.slice(0,21).map((image) => {
+            images.map((image) => {
               return (
                 <ImageItem
                   key={image.id}
