@@ -6,7 +6,7 @@ const TopicListItem = (props) => {
 
   let thumbnail;
 
-  if (!avatar) { thumbnail = 'src/style/img/placeholder.png'; }
+  if (!avatar) { thumbnail = 'https://placehold.it/350x150?text=NO%20IMAGE'; }
   else { thumbnail = avatar.link; }
 
   return (
