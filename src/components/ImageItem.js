@@ -60,7 +60,7 @@ const ImageItem = (props) => {
             <span class="item-description__title">{title}</span>
             <span class="item-description__text">{topic}</span>
             <span class="item-description__text">Type: Animated</span>
-            <a href={link} target="_blank">Imgur link</a>
+            <a href={`${url}${id}`} target="_blank">Imgur link</a>
           </div>
         </div>
       </div>
