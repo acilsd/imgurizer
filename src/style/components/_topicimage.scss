@@ -30,7 +30,7 @@
 }
 
 .item-description__section {
-  width: 70%;
+  width: 100%;
   flex-shrink: 0;
   flex-grow: 1;
   display: flex;
@@ -45,19 +45,13 @@
       opacity: 0.7;
     }
   }
-  &--text {
-    width: 25%;
-    flex-shrink: 0;
-    flex-grow: 1;
-    display: flex;
-    @include flex-column-center;
-  }
 }
 .item-description__title {
   text-transform: uppercase;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .item-description__text {
-  color: $white-trn;
+  margin-bottom: 5px;
 }
